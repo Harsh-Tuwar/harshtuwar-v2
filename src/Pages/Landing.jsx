@@ -1,11 +1,11 @@
 import React from 'react';
-import ContactBlock from './ContactBlock';
-import Footer from './Footer';
-import Intro from './Intro';
-import Nav from './Nav';
-import Socials from './Socials';
+import Nav from "../Components/Nav";
+import Intro from "../Components/Intro";
+import Socials from "../Components/Socials";
+import ContactBlock from "../Components/ContactBlock";
+import Footer from "../Components/Footer";
 
-const Main = () => {
+const Landing = () => {
 	return (
 		<div className="container">
 			<Nav />
@@ -23,4 +23,4 @@ const Main = () => {
 	);
 }
  
-export default Main;
+export default Landing;

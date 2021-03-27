@@ -1,8 +1,8 @@
-import Main from "../Components/Main";
+import AppRoutes from "../Routes/AppRoutes";
 
 function App() {
 	return (
-		<Main />
+		<AppRoutes />
 	)
 };
 
