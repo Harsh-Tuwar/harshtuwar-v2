@@ -1,16 +1,14 @@
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import React from "react";
-import Landing from "../Pages/Landing";
-import Contact from "../Pages/Contact";
-import Projects from '../Pages/Projects';
+import { Routes } from '../utils';
 
 const AppRoutes = () => {
 	return (
 		<>
 			<Router>
-				<Route exact path="/" component={Landing} />
-				<Route exact path="/contact" component={Contact} />
-				<Route exact path="/projects" component={Projects} />
+				{Routes.map(({ path, component }) => {
+					return <Route exact path={path} component={component} />
+				})}
 			</Router>
 		</>
 	);

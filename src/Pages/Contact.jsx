@@ -1,6 +1,5 @@
 import React from 'react';
 import Nav from "../Components/Nav";
-import Socials from '../Components/Socials';
 import Footer from '../Components/Footer';
 import ContactBlock from '../Components/ContactBlock';
 import ContactForm from '../Components/ContactForm';
@@ -16,7 +15,6 @@ const Contact = () => {
 						<h2 className="intro-description">Full-Stack Web Developer</h2>
 					</div>
 					<ContactForm />
-					<Socials />
 					<ContactBlock />
 				</main>
 				<div className="background-eff"></div>
