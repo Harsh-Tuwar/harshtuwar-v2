@@ -6,8 +6,8 @@ const AppRoutes = () => {
 	return (
 		<>
 			<Router>
-				{Routes.map(({ path, component }) => {
-					return <Route exact path={path} component={component} />
+				{Routes.map(({ path, component }, index) => {
+					return <Route exact path={path} component={component} key={index} />
 				})}
 			</Router>
 		</>

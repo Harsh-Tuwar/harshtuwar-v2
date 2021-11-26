@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './Container/App';
+import 'react-typist/dist/Typist.css';
 
 ReactDOM.render(
 	<React.StrictMode>

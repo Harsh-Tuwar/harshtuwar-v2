@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import NameHeader from './NameHeader';
+import PageContainer from './PageContainer';
 
 const ProjectsContainer = () => {
 	// const [repos, setRepos] = useState([]);
@@ -21,15 +23,19 @@ const ProjectsContainer = () => {
 	// }
 
 	return (
-		<div style={{ display: 'flex', textAlign: 'center', justifyContent: 'space-evenly', margin: '20px 0', flexWrap: 'wrap' }} >
-			{/* {repos && repos.map((item) => {
-				return (allowedRepos.includes(String(item.id))) ? <div className="repo-card" key={item.id}>
-					<div><b>{item.name}</b></div>
-					<div><b>Language(s) Used: </b>{getLanguages(item.name)}</div>
-					<div>{item.description}</div>
-				</div> : null;
-			})} */}
-		</div>
+		<>
+			<NameHeader />
+		</>
+		// <PageContainer 
+		// <div style={{ display: 'flex', textAlign: 'center', justifyContent: 'space-evenly', margin: '20px 0', flexWrap: 'wrap' }} >
+			// {/* {repos && repos.map((item) => {
+				// return (allowedRepos.includes(String(item.id))) ? <div className="repo-card" key={item.id}>
+				// 	<div><b>{item.name}</b></div>
+				// 	<div><b>Language(s) Used: </b>{getLanguages(item.name)}</div>
+				// 	<div>{item.description}</div>
+				// </div> : null;
+			// })} */}
+		// </div>
 	);
 }
  

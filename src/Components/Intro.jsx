@@ -1,12 +1,10 @@
 import React from 'react';
+import NameHeader from './NameHeader';
 
 const Intro = () => {
 	return (
 		<>
-			<div className="intro">
-				<h1 className="intro-header">Harsh Tuwar</h1>
-				<h2 className="intro-description">Full-Stack Web Developer</h2>
-			</div>
+			<NameHeader />
 			<div className="row">
 				<div className="col-md-6 col-sm-12 mt-4">
 					<p className="about-text">

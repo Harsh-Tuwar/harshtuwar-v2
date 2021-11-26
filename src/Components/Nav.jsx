@@ -6,8 +6,8 @@ const Nav = () => {
 	return (
 		<nav className="navbar">
 			<ul className="navbar-module">
-				{Routes.map(({ path, name }) => {
-					return <li className="headerli"><Link to={path} className="navbar-item" onClick={scrollToTop}>{name}</Link></li>
+				{Routes.map(({ path, name, isNavItem }, index) => {
+					return (isNavItem) ? <li className="headerli" key={index}><Link to={path} className="navbar-item" onClick={scrollToTop}>{name}</Link></li> : null;
 				})}
 			</ul>
 			<ul className="navbar-module navbar-socials">
