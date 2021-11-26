@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import NameHeader from './NameHeader';
-import PageContainer from './PageContainer';
+// import PageContainer from './PageContainer';
 
 const ProjectsContainer = () => {
 	// const [repos, setRepos] = useState([]);
